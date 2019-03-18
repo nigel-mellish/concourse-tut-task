@@ -23,4 +23,4 @@ jobs:
   - get: source-code
     trigger: true
   - task: run-tests
-    file: /ci/tasks/sample-task.yml
+    file: source-code/ci/tasks/sample-task.yml
