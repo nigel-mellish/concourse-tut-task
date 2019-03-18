@@ -4,5 +4,13 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-      repository: python
-      tag: 2-alpine3.8 
+    repository: python
+    tag: latest
+
+inputs:
+- name: source-code
+
+run:
+  user: root
+  path: ./ci/scripts/sample_script.sh
+  dir: rootDir
