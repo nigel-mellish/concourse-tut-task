@@ -17,10 +17,10 @@ resources:
       - "src/*"
 
 jobs:
-- name: exec-app
+- name: run-unit-tests
   public: true
   plan:
   - get: source-code
     trigger: true
-  - task:
-    file: ci/tasks/sample-task.yml
+  - task: run-tests
+    file: concourse-tut-task/ci/tasks/sample-task.yml
