@@ -11,6 +11,4 @@ inputs:
 - name: source-code
 
 run:
-  user: root
-  path: ../scripts/sample_script.sh
-  dir: rootDir
+  path: source-code/ci/scripts/poopoo.sh
