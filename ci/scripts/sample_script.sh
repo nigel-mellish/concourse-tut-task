@@ -1,2 +1,2 @@
 #!/bin/sh
-python src/example.py
+python ../../src/example.py
