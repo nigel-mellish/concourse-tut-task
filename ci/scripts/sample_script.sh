@@ -2,4 +2,5 @@
 
 # python ../../src/example.py
 echo ">>>>>>>>>>>"
-echo $(pwd)
+CUR=$(pwd)
+echo $(ls -al $CUR)
