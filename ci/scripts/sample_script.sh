@@ -1,3 +1,3 @@
 #!/bin/sh
 #python ../source-code/src/example.py
-ls -al ..
+ls -al ../f541ec31
