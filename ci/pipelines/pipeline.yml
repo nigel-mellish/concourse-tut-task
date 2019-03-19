@@ -33,4 +33,4 @@ jobs:
       inputs: 
       - name: source-code
       run:
-        path: source-code/ci/scripts/sample_script.sh
+        path: source-code/ci/scripts/foo.sh
