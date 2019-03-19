@@ -1,36 +1,24 @@
 ---
-resource_types:
-- name: test-container
-  type: docker-image
-  source:
-    repository: python
-    tag: 2-alpine3.8 
-
 resources:
 - name: source-code
   type: git
-  check_every: 3m
   source:
-    uri: https://github.com/nigel-mellish/concourse-tut-task
+    uri: https://github.com/nigel-mellish/concourse-tut-task.git
     branch: master
-    paths: 
-      - "src/*"
 
 jobs:
-- name: run-unit-tests
+- name: do-stuff
   public: true
   plan:
   - get: source-code
-    trigger: true
   - task: run-tests
     config:
       platform: linux
       image_resource:
         type: docker-image
-        source: 
-          repository: python
-          tag: latest
+        source: { repository: python }
       inputs: 
       - name: source-code
       run:
+        user: root
         path: source-code/ci/scripts/sample_script.sh
