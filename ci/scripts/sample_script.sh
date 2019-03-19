@@ -1,6 +1,1 @@
-#!/usr/local/bin/python
-
-print(">>>>>>>>>>>>>>>>")
-print("Hello from python concourse task.")
-print(">>>>>>>>>>>>>>>>")
-
+python ../src/example.py

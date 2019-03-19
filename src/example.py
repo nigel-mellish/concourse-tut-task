@@ -1,3 +1,5 @@
-print(">>>>>>>>>>>>>>>>>>>>>")
-print("this is a python docker concourse tutorial example.")
-print(">>>>>>>>>>>>>>>>>>>>>")
+#!/usr/local/bin/python
+
+print(">>>>>>>>>>>>>>>>")
+print("Hello from python concourse task.")
+print(">>>>>>>>>>>>>>>>")

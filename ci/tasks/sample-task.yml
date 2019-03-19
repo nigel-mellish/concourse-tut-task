@@ -11,4 +11,4 @@ inputs:
 - name: source-code
 
 run:
-  path: source-code/ci/scripts/poopoo.sh
+  path: source-code/ci/scripts/sample_script.sh
