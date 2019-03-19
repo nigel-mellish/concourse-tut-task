@@ -4,4 +4,4 @@
 echo ">>>>>>>>>>>"
 # BASEDIR="$(cd "$(dirname "${BASH_SOURCE}")"/.. && pwd -P)"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE}")"/.. && pwd -P)"
-echo "ls ${BASEDIR}"
+echo "ls ${BASEDIR}/*"
