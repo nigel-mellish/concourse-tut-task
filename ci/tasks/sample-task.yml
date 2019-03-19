@@ -11,9 +11,4 @@ inputs:
 - name: source-code
 
 run:
-  user: root
-  path: sh
-  args:
-    - -c
-    - | 
-      source-code/src/example.py
+  path: source-code/ci/scripts/sample_script.sh

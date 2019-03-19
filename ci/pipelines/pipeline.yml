@@ -23,4 +23,14 @@ jobs:
   - get: source-code
     trigger: true
   - task: run-tests
-    file: source-code/ci/tasks/sample-task.yml
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: 
+          repository: python
+          tag: latest
+      inputs: 
+      - name: source-code
+      run:
+        path: source-code/ci/scripts/sample_script.sh
